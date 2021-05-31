@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "dev": "yarn workspace example dev",
+    "deploy": "yarn workspace example deploy",
     "lib:watch": "yarn workspace vue3-smooth-dnd run build:watch",
     "lib": "yarn workspace vue3-smooth-dnd run build"
   }
