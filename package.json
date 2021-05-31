@@ -1,0 +1,12 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace example dev",
+    "lib:watch": "yarn workspace vue3-smooth-dnd run build:watch",
+    "lib": "yarn workspace vue3-smooth-dnd run build"
+  }
+}
