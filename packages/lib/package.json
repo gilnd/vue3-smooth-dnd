@@ -1,6 +1,6 @@
 {
   "name": "vue3-smooth-dnd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vue 3 wrappers for smooth-dnd library",
   "author": "Gilbert Ndresaj",
   "license": "MIT",
@@ -28,7 +28,9 @@
   "module": "dist/vue3-smooth-dnd.esm.js",
   "main": "dist/vue3-smooth-dnd.js",
   "unpkg": "dist/vue3-smooth-dnd.global.js",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -c -w"
