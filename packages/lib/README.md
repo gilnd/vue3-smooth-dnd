@@ -12,7 +12,7 @@ All the [documentation](https://github.com/kutlugsahin/vue-smooth-dnd/blob/maste
     
 ## Install
 ```bash
-yarn add vue3-smooth-dnd
+npm install vue3-smooth-dnd
 ```
 
 ## Usage
@@ -68,3 +68,4 @@ export default {
 }
 </script>
 ```
+
