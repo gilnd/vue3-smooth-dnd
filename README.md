@@ -22,7 +22,7 @@ yarn add vue3-smooth-dnd
 <template>
   <div>
     <span>Studio Ghibli Tier List</span>
-    <Container @drop="onDrop">            
+    <Container orientation="vertical" @drop="onDrop">            
       <Draggable v-for="(item, i) in items" :key="item.id">
         <div>
            {{i + 1}} -> {{item.data}}
