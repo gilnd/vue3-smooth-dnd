@@ -47,7 +47,7 @@ export default defineComponent({
     dragClass: String,
     dropClass: String,
     dragBeginDelay: Number,
-    animationDuration: Number,
+    animationDuration: { type: Number, default: 250 },
     getChildPayload: Function,
     shouldAnimateDrop: Function,
     shouldAcceptDrop: Function,
