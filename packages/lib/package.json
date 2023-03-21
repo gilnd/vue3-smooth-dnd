@@ -1,6 +1,6 @@
 {
   "name": "vue3-smooth-dnd",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Vue 3 wrappers for smooth-dnd library",
   "author": "Gilbert Ndresaj",
   "license": "MIT",
