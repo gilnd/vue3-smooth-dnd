@@ -20,12 +20,10 @@ export default defineComponent({
     // emit events
     const options = Object.assign({}, this.$props);
     for (const key in eventEmitterMap) {
-      //console.log(`${key}: ${eventEmitterMap[key]}`);
       options[eventEmitterMap[key]] = (props) => {
         this.$emit(key, props);
       }
     }
-
     this.containerElement = this.$refs.container || this.$el;
     this.container = smoothDnD(this.containerElement, options);
   },
@@ -36,18 +34,18 @@ export default defineComponent({
   },
   emits: ['drop', 'drag-start', 'drag-end', 'drag-enter', 'drag-leave', 'drop-ready' ],
   props: {
+    orientation: { type: String, default: 'vertical' },
     removeOnDropOut: { type: Boolean, default: false },
     autoScrollEnabled: { type: Boolean, default: true },
+    animationDuration: { type: Number, default: 250 },
     behaviour: String,
     groupName: String,
-    orientation: String,
     dragHandleSelector: String,
     nonDragAreaSelector: String,
     lockAxis: String,
     dragClass: String,
     dropClass: String,
     dragBeginDelay: Number,
-    animationDuration: { type: Number, default: 250 },
     getChildPayload: Function,
     shouldAnimateDrop: Function,
     shouldAcceptDrop: Function,

@@ -17,7 +17,7 @@
         <!-- column -->
         <Container
           class="flex-grow overflow-y-auto overflow-x-hidden"
-          orientation="vertical"
+          
           group-name="col-items"
           :shouldAcceptDrop="(e, payload) =>  (e.groupName === 'col-items' && !payload.loading)"
           :get-child-payload="getCardPayload(column.id)"

@@ -1,14 +1,3 @@
-
-/**
- * Checks if object is array
- * @param {*} obj 
- * @returns boolean
- */
-const isArray = function (obj) {
-  return Array.isArray(obj);
-  //return Object.prototype.toString.call(obj) === '[object Array]';
-};
-
 /**
  * Checks if tag or tag.value (ref) is string function or object
  * @param {*} tag 
@@ -44,7 +33,7 @@ export function getTagProps (ctx, tagClasses) {
       const result = { value: tag.value || 'div', props: tag.props || {} };
       if (tagClasses) {
         if (result.props.class) {
-          if (isArray(result.props.class)) {
+          if (Array.isArray(result.props.class)) {
             result.props.class.push(tagClasses);
           } else {
             result.props.class = [tagClasses, result.props.class];
