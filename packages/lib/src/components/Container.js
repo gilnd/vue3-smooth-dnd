@@ -29,7 +29,11 @@ export default defineComponent({
   },
   unmounted () {
     if (this.container) {
-      this.container.dispose();
+      try {
+        this.container.dispose();
+      } catch {
+        // ignore
+      }
     }
   },
   emits: ['drop', 'drag-start', 'drag-end', 'drag-enter', 'drag-leave', 'drop-ready' ],
